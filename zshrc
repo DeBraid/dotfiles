@@ -1,7 +1,7 @@
 #   -----------------------------
 #     LIST
 #   -----------------------------
-alias l="ls -lah"    # list by size, biggest last
+alias l="ls -lah"     # list pretty shorthand
 alias lz="ls -lSr"    # list by size, biggest last
 alias lsdo="ls -d */" # list sub-dir's only
 alias lt="ls -tlr"    # list by last modified, most recent last
