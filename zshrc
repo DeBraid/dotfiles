@@ -99,3 +99,6 @@ alias fhere="find . -name "
 fnd () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
 ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
 ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
+
+# setup remote SSH shell feature
+source ~/.iterm2_shell_integration.bash
