@@ -101,4 +101,4 @@ ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name sta
 ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
 
 # setup remote SSH shell feature
-source ~/.iterm2_shell_integration.bash
+source ~/.iterm2_shell_integration.zsh
