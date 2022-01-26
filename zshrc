@@ -99,6 +99,3 @@ alias fhere="find . -name "
 fnd () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
 ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
 ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
-
-# Next, you need to load the script at login time. Add this to the end of ~/.zshrc:
-source ~/.iterm2_shell_integration.zsh
