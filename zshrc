@@ -100,5 +100,7 @@ fnd () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the cur
 ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
 ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
 
+findandreplacestring () { git grep -lz $1 | xargs -0 sed -i '' -e "s/$1/$2/g" }   # global find and replace string
+
 # setup remote SSH shell feature
 source ~/.iterm2_shell_integration.zsh
