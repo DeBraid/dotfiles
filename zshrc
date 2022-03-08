@@ -109,3 +109,7 @@ findandreplacestring () { git grep -lz $1 | xargs -0 sed -i '' -e "s/$1/$2/g" } 
 # yarn lint yarn run eslint --fix path_to_my_files_here
 # setup remote SSH shell feature
 source ~/.iterm2_shell_integration.zsh
+# enable tab-completion for zsh inside spin
+zstyle ':completion:*' use-cache on
+autoload -Uz compinit && compinit
+source <(spin completion)
