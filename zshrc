@@ -74,6 +74,11 @@ alias gr="git remote -v"
 alias grr="git remote rm"
 alias gra="git remote add"
 
+alias grc="git rebase --continue"
+alias gf="git fetch"
+
+
+
 function git_branch {
   # Shows the current branch if in a git repository
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \(\1\)/';
