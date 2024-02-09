@@ -77,8 +77,6 @@ alias gra="git remote add"
 alias grc="git rebase --continue"
 alias gf="git fetch"
 
-
-
 function git_branch {
   # Shows the current branch if in a git repository
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \(\1\)/';
@@ -111,9 +109,20 @@ ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name sta
 ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
 
 findandreplacestring () { git grep -lz $1 | xargs -0 sed -i '' -e "s/$1/$2/g" }   # global find and replace string
-# yarn lint yarn run eslint --fix path_to_my_files_here
+
+
+#   ---------------------------
+#   5.  YARN
+#   ---------------------------
+alias yt='yarn test'                        # run tests with yarn
+alias ytw='yarn test --watch'               # watch tests with yarn
+
+#   ---------------------------
+#   6.  MISC
+#   ---------------------------
 # setup remote SSH shell feature
 source ~/.iterm2_shell_integration.zsh
+
 # enable tab-completion for zsh inside spin
 zstyle ':completion:*' use-cache on
 autoload -Uz compinit && compinit
