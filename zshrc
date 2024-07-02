@@ -53,6 +53,9 @@ alias gbd="git branch -d"
 
 alias gchb="git checkout -b"
 alias gch="git checkout"
+# gh cli
+alias prch="gh pr checkout"
+alias prv="gh pr view -w"
 
 alias gp="git push"
 alias gpu="git pull"
@@ -112,10 +115,10 @@ findandreplacestring () { git grep -lz $1 | xargs -0 sed -i '' -e "s/$1/$2/g" } 
 
 
 #   ---------------------------
-#   5.  YARN
+#   5.  pnpm
 #   ---------------------------
-alias yt='yarn test'                        # run tests with yarn
-alias ytw='yarn test --watch'               # watch tests with yarn
+alias pt='pnpm test'                        # run tests with pnpm
+alias ytw='pnpm test -- --watch'               # watch tests with pnpm
 
 #   ---------------------------
 #   6.  MISC
